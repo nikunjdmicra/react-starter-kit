@@ -19,6 +19,7 @@ export default (state = initState, action) => {
     case GET_HOME_DATA_REQUEST:
       state = { ...state, loading: true };
       break;
+
     case GET_HOME_DATA_SUCCESS:
       state = {
         ...state,
@@ -26,6 +27,7 @@ export default (state = initState, action) => {
         homePageData: action.payload,
       };
       break;
+
     case GET_HOME_DATA_FAILED:
       state = { ...state, loading: false, error: action.payload };
       break;

@@ -22,6 +22,9 @@ const Header = () => {
           <Link to="/contact">
             <h4>Contact</h4>
           </Link>
+          <Link to="/firebaseCrud">
+            <h4>Firebase CRUD</h4>
+          </Link>
           <IoMdLogOut
             size={25}
             className="cursor-pointer"
